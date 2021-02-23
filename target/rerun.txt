@@ -1,2 +1,0 @@
-file:src/test/resources/features/login.feature:12:13
-file:src/test/resources/features/logout.feature:13:14
