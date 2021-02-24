@@ -13,4 +13,7 @@ public class UsersPage extends BasePage{
 
     @FindBy(tagName = "th")
     public List<WebElement> tableHeaders;
+
+    @FindBy(id = "user_status")
+    public WebElement statusDropDown;
 }
