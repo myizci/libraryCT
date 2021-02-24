@@ -3,36 +3,15 @@
     "line": 1,
     "elements": [
       {
-        "line": 3,
-        "name": "user navigates to login page",
+        "start_timestamp": "2021-02-22T05:28:32.181Z",
+        "line": 4,
+        "name": "user management table columns names",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 2753000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user on login page",
-            "match": {
-              "location": "com.libraryAutomation.stepDefinitions.Login_stepDefinitions.user_on_login_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-22T12:46:35.009Z",
-        "line": 6,
-        "name": "As a librarian, I should be able to add users from users page",
-        "description": "",
-        "id": "as-a-user--i-will-be-add-and-edit-a-new-user;as-a-librarian--i-should-be-able-to-add-users-from-users-page",
+        "id": "user-management-table-feature;user-management-table-columns-names",
         "after": [
           {
             "result": {
-              "duration": 155000000,
+              "duration": 967000000,
               "status": "passed"
             },
             "match": {
@@ -45,56 +24,70 @@
         "steps": [
           {
             "result": {
-              "duration": 281000000,
+              "duration": 6000000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "user login as a \"librarian\"",
+            "line": 5,
+            "name": "the user librarian is on the homepage",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"librarian\"",
-                  "offset": 16
-                }
-              ],
-              "location": "com.libraryAutomation.stepDefinitions.Login_stepDefinitions.user_login_as_a(java.lang.String)"
+              "location": "com.libraryAutomation.stepDefinitions.ColumnNames_stepDefinitions.the_user_librarian_is_on_the_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1656000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user click users module",
+            "match": {
+              "location": "com.libraryAutomation.stepDefinitions.ColumnNames_stepDefinitions.the_user_click_users_module()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 616000000,
+              "duration": 558000000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "user navigate to Users page",
+            "line": 7,
+            "name": "the user should see the following column names:",
             "match": {
-              "location": "com.libraryAutomation.stepDefinitions.User_stepDefinitions.user_navigate_to_users_page()"
+              "location": "com.libraryAutomation.stepDefinitions.ColumnNames_stepDefinitions.the_user_should_see_the_following_column_names(java.util.List\u003cjava.lang.String\u003e)"
             },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1577000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "use add a new user",
-            "match": {
-              "location": "com.libraryAutomation.stepDefinitions.User_stepDefinitions.user_add_a_new_user()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1231000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user can edit new user",
-            "match": {
-              "location": "com.libraryAutomation.stepDefinitions.User_stepDefinitions.user_can_edit_new_user()"
-            },
+            "rows": [
+              {
+                "cells": [
+                  "Actions"
+                ]
+              },
+              {
+                "cells": [
+                  "User ID"
+                ]
+              },
+              {
+                "cells": [
+                  "Full Name"
+                ]
+              },
+              {
+                "cells": [
+                  "Email"
+                ]
+              },
+              {
+                "cells": [
+                  "Group"
+                ]
+              },
+              {
+                "cells": [
+                  "Status"
+                ]
+              }
+            ],
             "keyword": "Then "
           }
         ],
@@ -105,11 +98,11 @@
         ]
       }
     ],
-    "name": "As a user, I will be add and edit a new user",
+    "name": "User management table feature",
     "description": "",
-    "id": "as-a-user--i-will-be-add-and-edit-a-new-user",
+    "id": "user-management-table-feature",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US4.feature",
+    "uri": "file:src/test/resources/features/columnNames.feature",
     "tags": []
   }
 ]
