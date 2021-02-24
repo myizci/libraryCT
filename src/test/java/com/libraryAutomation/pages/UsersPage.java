@@ -14,6 +14,13 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
+import com.libraryAutomation.utilities.Driver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import java.util.List;
+
 public class UsersPage extends BasePage{
 
 
@@ -100,5 +107,13 @@ public class UsersPage extends BasePage{
         saveChangesButton.click();
     }
 
+
+
+
+    @FindBy(xpath = "//select[@id='user_groups']")
+    public WebElement UserGroupDropdown;
+
+    @FindBy(id = "user_groups")
+    public WebElement userGroupDropdown;
 
 }
