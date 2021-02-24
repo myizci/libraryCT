@@ -3,15 +3,15 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-02-23T03:42:44.613Z",
+        "start_timestamp": "2021-02-22T05:28:32.181Z",
         "line": 4,
-        "name": "verify user categories",
+        "name": "user management table columns names",
         "description": "",
-        "id": "show-user-functionality;verify-user-categories",
+        "id": "user-management-table-feature;user-management-table-columns-names",
         "after": [
           {
             "result": {
-              "duration": 86353000,
+              "duration": 967000000,
               "status": "passed"
             },
             "match": {
@@ -24,64 +24,67 @@
         "steps": [
           {
             "result": {
-              "duration": 2744471000,
+              "duration": 6000000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "the user is on the homepage",
+            "name": "the user librarian is on the homepage",
             "match": {
-              "location": "com.libraryAutomation.stepDefinitions.Users_StepDefinitions.the_user_is_on_the_homepage()"
+              "location": "com.libraryAutomation.stepDefinitions.ColumnNames_stepDefinitions.the_user_librarian_is_on_the_homepage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 6430275000,
+              "duration": 1656000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "the user click Users module",
+            "name": "the user click users module",
             "match": {
-              "location": "com.libraryAutomation.stepDefinitions.Users_StepDefinitions.the_user_click_users_module()"
+              "location": "com.libraryAutomation.stepDefinitions.ColumnNames_stepDefinitions.the_user_click_users_module()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3054497000,
+              "duration": 558000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "the user click User Group dropdown",
+            "name": "the user should see the following column names:",
             "match": {
-              "location": "com.libraryAutomation.stepDefinitions.Users_StepDefinitions.the_user_click_user_group_dropdown()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 73312000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "the user should see the following options:",
-            "match": {
-              "location": "com.libraryAutomation.stepDefinitions.Users_StepDefinitions.the_user_should_see_the_following_options(java.util.List\u003cjava.lang.String\u003e)"
+              "location": "com.libraryAutomation.stepDefinitions.ColumnNames_stepDefinitions.the_user_should_see_the_following_column_names(java.util.List\u003cjava.lang.String\u003e)"
             },
             "rows": [
               {
                 "cells": [
-                  "ALL"
+                  "Actions"
                 ]
               },
               {
                 "cells": [
-                  "Librarian"
+                  "User ID"
                 ]
               },
               {
                 "cells": [
-                  "Students"
+                  "Full Name"
+                ]
+              },
+              {
+                "cells": [
+                  "Email"
+                ]
+              },
+              {
+                "cells": [
+                  "Group"
+                ]
+              },
+              {
+                "cells": [
+                  "Status"
                 ]
               }
             ],
@@ -95,11 +98,11 @@
         ]
       }
     ],
-    "name": "Show User functionality",
+    "name": "User management table feature",
     "description": "",
-    "id": "show-user-functionality",
+    "id": "user-management-table-feature",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US9.feature",
+    "uri": "file:src/test/resources/features/columnNames.feature",
     "tags": []
   }
 ]

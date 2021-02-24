@@ -18,6 +18,8 @@ import org.junit.runner.RunWith;
         glue = "com/libraryAutomation/stepDefinitions",
         dryRun= false,
         tags=" @wip"
+        dryRun = false,
+        tags= "@wip"
 
 )
 public class CukesRunner {
