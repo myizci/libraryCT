@@ -39,7 +39,7 @@ public class UsersPage extends BasePage{
     private WebElement userGroupDropDown;
 
     @FindBy(id = "status")
-    private WebElement statusDropDown;
+    private WebElement statusDropDownOmer;
 
     @FindBy(id = "address")
     private WebElement addressBox;
@@ -73,7 +73,7 @@ public class UsersPage extends BasePage{
         DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         addUserLink.click();
         Select selectUserGroup = new Select(userGroupDropDown);
-        Select selectStatus = new Select(statusDropDown);
+        Select selectStatus = new Select(statusDropDownOmer);
         BrowserUtils.waitForVisibility(fullNameBox, 5);
         fullNameBox.sendKeys(name);
         passwordBox.sendKeys(faker.internet().password());
