@@ -46,20 +46,4 @@ public class UserStatus_stepDefinitions {           //GULISTAN
         Assert.assertEquals(options,actualText);
     }
 
-
-
-  /*  @Given("The librarian is on the homepage")
-    public void theLibrarianIsOnTheHomepage() {
-
-    }
-    @When("Librarian clicks on Users link")
-    public void librarianClicksOnUsersLink() {
-    }
-    @Then("verify default value should be {int}")
-    public void verifyDefaultValueShouldBe(int arg0) {
-    }
-    @Then("show records for the following counts")
-    public void showRecordsForTheFollowingCounts() {
-    }
-*/
 }
