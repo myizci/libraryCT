@@ -2,18 +2,12 @@ package com.libraryAutomation.stepDefinitions;
 
 import com.libraryAutomation.pages.LoginPage;
 import com.libraryAutomation.pages.UsersPage;
-import com.libraryAutomation.utilities.BrowserUtils;
 import com.libraryAutomation.utilities.ConfigurationReader;
 import com.libraryAutomation.utilities.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
-
-import java.util.List;
 
 public class UserStatus_stepDefinitions {           //GULISTAN
 
@@ -37,12 +31,11 @@ public class UserStatus_stepDefinitions {           //GULISTAN
         usersPage.statusDropDown.click();
     }
 
-    @Then("the user should see the following options:")
-    public void the_user_should_see_the_following_options(List <String> options) {
+   // @Then("the user should see the following options:")
+   // public void the_user_should_see_the_following_options(List <String> options) {
 
-        select = new Select(usersPage.statusDropDown);
-        List<WebElement> webElements = select.getOptions();
-        List<String> actualText = BrowserUtils.getElementsText(webElements);
-        Assert.assertEquals(options,actualText);
+     //   select = new Select(usersPage.statusDropDown);
+       // List<WebElement> webElements = select.getOptions();
+        //List<String> actualText = BrowserUtils.getElementsText(webElements);
+        //Assert.assertEquals(options,actualText);
     }
-}

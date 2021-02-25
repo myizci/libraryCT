@@ -2,28 +2,19 @@ package com.libraryAutomation.pages;
 
 import com.github.javafaker.Faker;
 import com.libraryAutomation.utilities.BrowserUtils;
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-
-import java.util.List;
-
-import com.libraryAutomation.utilities.Driver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-
 import java.util.List;
 
 public class UsersPage extends BasePage{
 
 
+    private static WebElement showRecords;
     @FindBy(xpath = "//span[.='Users']" )
          public WebElement usersLink;
 
@@ -116,4 +107,13 @@ public class UsersPage extends BasePage{
     @FindBy(id = "user_groups")
     public WebElement userGroupDropdown;
 
+    public static WebElement showRecord;
+    @FindBy(xpath = "(//select)[3]")
+    public WebElement getShowRecords;
+
+    public static void getDefaultValue(int defaultValue){
+        Select select = new Select(showRecords);
+        Assert.assertTrue("Failed, parsing not succcessful",
+                Integer.parseInt(select.getFirstSelectedOption().getText()) == defaultValue);
+    }
 }

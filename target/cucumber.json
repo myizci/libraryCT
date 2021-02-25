@@ -1,17 +1,17 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-02-22T05:28:32.181Z",
+        "start_timestamp": "2021-02-25T03:55:24.030Z",
         "line": 4,
-        "name": "user management table columns names",
+        "name": "Default value verification",
         "description": "",
-        "id": "user-management-table-feature;user-management-table-columns-names",
+        "id": "as-a-librarian--i-should-be-able-to-see-book-records-on-user-page;default-value-verification",
         "after": [
           {
             "result": {
-              "duration": 967000000,
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -24,67 +24,149 @@
         "steps": [
           {
             "result": {
-              "duration": 6000000000,
+              "duration": 2000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "the user librarian is on the homepage",
+            "name": "User  librarian is on the homepage",
             "match": {
-              "location": "com.libraryAutomation.stepDefinitions.ColumnNames_stepDefinitions.the_user_librarian_is_on_the_homepage()"
+              "location": "com.libraryAutomation.stepDefinitions.BookShowRecord_stepDefinition.user_librarian_is_on_the_homepage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1656000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "the user click users module",
+            "name": "User click on \"Users\" link",
             "match": {
-              "location": "com.libraryAutomation.stepDefinitions.ColumnNames_stepDefinitions.the_user_click_users_module()"
+              "arguments": [
+                {
+                  "val": "\"Users\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.libraryAutomation.stepDefinitions.BookShowRecord_stepDefinition.user_click_on_link(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 558000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "the user should see the following column names:",
+            "name": "User verify that the default record is 10",
             "match": {
-              "location": "com.libraryAutomation.stepDefinitions.ColumnNames_stepDefinitions.the_user_should_see_the_following_column_names(java.util.List\u003cjava.lang.String\u003e)"
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 39
+                }
+              ],
+              "location": "com.libraryAutomation.stepDefinitions.BookShowRecord_stepDefinition.user_verify_that_the_default_record_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@10"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-25T03:55:24.110Z",
+        "line": 9,
+        "name": "Verify the \u003ccount\u003e options",
+        "description": "",
+        "id": "as-a-librarian--i-should-be-able-to-see-book-records-on-user-page;verify-the-\u003ccount\u003e-options",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.libraryAutomation.stepDefinitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User  librarian is on the homepage",
+            "match": {
+              "location": "com.libraryAutomation.stepDefinitions.BookShowRecord_stepDefinition.user_librarian_is_on_the_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User click on \"Users\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Users\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.libraryAutomation.stepDefinitions.BookShowRecord_stepDefinition.user_click_on_link(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User sees show records for the following count",
+            "match": {
+              "location": "com.libraryAutomation.stepDefinitions.BookShowRecord_stepDefinition.user_sees_show_records_for_the_following_count()"
             },
             "rows": [
               {
                 "cells": [
-                  "Actions"
+                  "5"
                 ]
               },
               {
                 "cells": [
-                  "User ID"
+                  "10"
                 ]
               },
               {
                 "cells": [
-                  "Full Name"
+                  "15"
                 ]
               },
               {
                 "cells": [
-                  "Email"
+                  "50"
                 ]
               },
               {
                 "cells": [
-                  "Group"
+                  "100"
                 ]
               },
               {
                 "cells": [
-                  "Status"
+                  "200"
+                ]
+              },
+              {
+                "cells": [
+                  "500"
                 ]
               }
             ],
@@ -93,16 +175,25 @@
         ],
         "tags": [
           {
-            "name": "@wip"
+            "name": "@10"
           }
         ]
       }
     ],
-    "name": "User management table feature",
+    "name": "As a librarian, I should be able to see book records on user page",
     "description": "",
-    "id": "user-management-table-feature",
+    "id": "as-a-librarian--i-should-be-able-to-see-book-records-on-user-page",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/columnNames.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/bookRecord.feature",
+    "tags": [
+      {
+        "name": "@10",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
