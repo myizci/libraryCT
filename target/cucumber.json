@@ -3,15 +3,15 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-02-22T05:28:32.181Z",
+        "start_timestamp": "2021-02-25T02:54:51.995Z",
         "line": 4,
-        "name": "user management table columns names",
+        "name": "verify user status",
         "description": "",
-        "id": "user-management-table-feature;user-management-table-columns-names",
+        "id": "user-status-feature;verify-user-status",
         "after": [
           {
             "result": {
-              "duration": 967000000,
+              "duration": 97219000,
               "status": "passed"
             },
             "match": {
@@ -24,67 +24,65 @@
         "steps": [
           {
             "result": {
-              "duration": 6000000000,
+              "duration": 4699610000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "the user librarian is on the homepage",
+            "line": 6,
+            "name": "the user \"Librarian\" on the homepage",
             "match": {
-              "location": "com.libraryAutomation.stepDefinitions.ColumnNames_stepDefinitions.the_user_librarian_is_on_the_homepage()"
+              "arguments": [
+                {
+                  "val": "\"Librarian\"",
+                  "offset": 9
+                }
+              ],
+              "location": "com.libraryAutomation.stepDefinitions.UserStatus_stepDefinitions.the_user_on_the_homepage(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1656000000,
+              "duration": 933037000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "the user click users module",
+            "line": 7,
+            "name": "the user click users moudle",
             "match": {
-              "location": "com.libraryAutomation.stepDefinitions.ColumnNames_stepDefinitions.the_user_click_users_module()"
+              "location": "com.libraryAutomation.stepDefinitions.UserStatus_stepDefinitions.the_user_click_users_moudle()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 558000000,
+              "duration": 126300000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "the user should see the following column names:",
+            "line": 8,
+            "name": "the user click Status dropdown",
             "match": {
-              "location": "com.libraryAutomation.stepDefinitions.ColumnNames_stepDefinitions.the_user_should_see_the_following_column_names(java.util.List\u003cjava.lang.String\u003e)"
+              "location": "com.libraryAutomation.stepDefinitions.UserStatus_stepDefinitions.the_user_click_status_dropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 154698000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user should see the following options on userStatus:",
+            "match": {
+              "location": "com.libraryAutomation.stepDefinitions.UserStatus_stepDefinitions.theUserShouldSeeTheFollowingOptionsOnUserStatus(java.util.List\u003cjava.lang.String\u003e)"
             },
             "rows": [
               {
                 "cells": [
-                  "Actions"
+                  "ACTIVE"
                 ]
               },
               {
                 "cells": [
-                  "User ID"
-                ]
-              },
-              {
-                "cells": [
-                  "Full Name"
-                ]
-              },
-              {
-                "cells": [
-                  "Email"
-                ]
-              },
-              {
-                "cells": [
-                  "Group"
-                ]
-              },
-              {
-                "cells": [
-                  "Status"
+                  "INACTIVE"
                 ]
               }
             ],
@@ -98,11 +96,11 @@
         ]
       }
     ],
-    "name": "User management table feature",
+    "name": "User status feature",
     "description": "",
-    "id": "user-management-table-feature",
+    "id": "user-status-feature",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/columnNames.feature",
+    "uri": "file:src/test/resources/features/userStatus.feature",
     "tags": []
   }
 ]

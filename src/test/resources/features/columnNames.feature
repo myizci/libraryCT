@@ -1,6 +1,6 @@
 Feature: User management table feature
 
-  @wip
+
   Scenario: user management table columns names
     Given the user librarian is on the homepage
     When the user click users module

@@ -37,12 +37,13 @@ public class UserStatus_stepDefinitions {           //GULISTAN
         usersPage.statusDropDown.click();
     }
 
-    @Then("the user should see the following options:")
-    public void the_user_should_see_the_following_options(List <String> options) {
+    @Then("the user should see the following options on userStatus:")
+    public void theUserShouldSeeTheFollowingOptionsOnUserStatus(List<String> options) {
 
         select = new Select(usersPage.statusDropDown);
         List<WebElement> webElements = select.getOptions();
         List<String> actualText = BrowserUtils.getElementsText(webElements);
         Assert.assertEquals(options,actualText);
     }
+
 }
